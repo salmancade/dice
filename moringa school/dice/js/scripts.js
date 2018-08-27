@@ -76,3 +76,17 @@ $(document).ready(function(){
 
     $(".start-game").show();
   });
+
+  $("button#rollPlayer1").click(function(event){
+    player1.roll = rollRandom();
+    $("#dice-roll-1").text(player1.roll);
+    player1.scoreone();
+    $("#round-total-1").text(player1.currentScore);
+  });
+
+  $("button#rollPlayer2").click(function(event){
+    player2.roll = rollRandom();
+    $("#dice-roll-2").text(player2.roll);
+    player2.scoreone();
+    $("#round-total-2").text(player2.currentScore);
+  });
