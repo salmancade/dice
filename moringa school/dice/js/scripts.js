@@ -12,3 +12,12 @@ function Player (turn){
   this.turn = turn;
   this.playerName;
 }
+
+Player.prototype.scoreone = function () {
+  if (this.roll === 1) {
+    this.currentScore = 0;
+    alert("You scored a 1 " + this.playerName +" Your turn is over pass the dice");
+  } else {
+    this.currentScore += this.roll;
+  }
+}
