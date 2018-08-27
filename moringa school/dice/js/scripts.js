@@ -33,3 +33,10 @@ Player.prototype.crownWinner = function (){
     alert(this.playerName + " Congratulations, You have won")
   }
 }
+
+Player.prototype.newGame = function () {
+  this.roll = 0;
+  this.currentScore= 0;
+  this.score = 0;
+  this.playerName= "";
+}
