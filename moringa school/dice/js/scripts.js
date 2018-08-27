@@ -40,3 +40,9 @@ Player.prototype.newGame = function () {
   this.score = 0;
   this.playerName= "";
 }
+var clearValues = function(){
+  $(".player1Name").val("");
+  $(".player2Name").val("");
+}
+
+$(document).ready(function(){
