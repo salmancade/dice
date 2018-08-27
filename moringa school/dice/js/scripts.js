@@ -90,3 +90,21 @@ $(document).ready(function(){
     player2.scoreone();
     $("#round-total-2").text(player2.currentScore);
   });
+
+  $("button#holdPlayer1").click(function(event){
+  player1.hold();
+  $("#total-score-1").text(player1.score);
+  $("#round-total-1").empty();
+  $("#dice-roll-1").empty();
+  player1.crownWinner();
+});
+
+  $("button#holdPlayer2").click(function(event){
+    player2.hold();
+    $("#total-score-2").text(player2.score);
+    $("#round-total-2").empty();
+    $("#dice-roll-2").empty();
+    player2.crownWinner();
+  });
+
+});
