@@ -21,3 +21,15 @@ Player.prototype.scoreone = function () {
     this.currentScore += this.roll;
   }
 }
+
+Player.prototype.hold = function () {
+  this.score += this.currentScore;
+  this.currentScore = 0;
+  alert(this.playerName + " , your turn is over pass the dice");
+}
+
+Player.prototype.crownWinner = function (){
+  if (this.score >= 100){
+    alert(this.playerName + " Congratulations, You have won")
+  }
+}
