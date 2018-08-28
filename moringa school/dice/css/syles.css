@@ -1,9 +1,43 @@
-.container{
+/* .split{
    background-color:#f8f8f8;
    height: auto;
    word-spacing: normal;
 
 }
 .jumbotron{
+  text-align:justify;
+} */
+/* .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+} */
+
+/* Control the left side */
+/* .left {
+  left: 0;
+  background-color:green;
+}
+
+/* Control the right side */
+/* .right {
+  right: 0;
+  background-color: red;
+} */
+#playGame{
+  float: right;
+}
+#player2{
+  float: right;
+  padding-right:5px;
+  text-align:justify;
+}
+#player1{
+  float: right;
+  padding-right:4px;
   text-align:justify;
 }
